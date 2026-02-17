@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>simple form</title>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+    <form action="somthing.php" method="get">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <label>Name : </label>
+            <input type="text" id="name" name="name" placeholder="Full Name">
+        <br>
+            <label>Email : </label>
+            <input type="email"  id="email" name="email" placeholder="Email">
+        <br>
+            <label>Password : </label>
+            <input type="password" id="password" name="password" placeholder="Password">
+        <br>
+            <label>Gender : </label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label>Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label>Female</label>
+        <br>
+            <label>Course : </label>
+            <select name="qualification" id="qualification">
+                <option>B.Tech</option>
+                <option>M.Tech</option>
+                <option>BCA</option>
+                <option>MCA</option>
+            </select>
+        <br>
+            <input type="submit" value="Register">
+        <br>
+            <label>Already a User ? </label>
+            <a href="login.html">
+            <button type="button">Login</button>
+            </a>
+
+            </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>course enrollment</title>
+    </head>
+    <body>
+        <h2>Enroll Now...</h2>
+        <form action="somthing.php" method="get">
+            <fieldset>
+                <legend>Register here</legend>
+                <label>Name : </label>
+                <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+            <br>
+                <label>Email : </label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+            <br>
+                <label>Phone : </label>
+                <input type="text" id="Phone" name="phone" pattern="[0-9]{10}" placeholder="Enter a valid contact">
+            <br>
+                <label>Course</label>
+                <input list="courses" id="choice" name="choice" placeholder="Start typing...">
+                <datalist id="courses">
+                      <option value="java">
+                      <option value="python">
+                      <option value="c++">
+                      <option value="SQl">
+                </datalist>
+            <br>
+                <label>Current course progress : </label>
+                <progress value="30" max="100"></progress>
+            <br>
+                <label>Your Skill Level</label>
+                <meter value="60" max="100"></meter>
+            <br>
+                <input type="submit" value="Register">
+            </fieldset>
+        </form>
+    </body>
+</html>
