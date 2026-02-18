@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Dashboard Layout</title>
+  <style>
+    header
+    {
+        background-color: rgb(118, 148, 207);
+    }
+    h2
+    {
+        color:rgb(212, 231, 168);
+        text-align: center;
+    }
+    nav
+    {
+        text-align: center;
+    }
+    nav a
+    {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+        color: rgb(10, 73, 234);
+        padding: 50px;
+        text-decoration: none;    
+    }
+    .container
+    {
+        display: flex;
+        min-height: 100vh;
+    }
+    .main {
+        flex: 1;
+        padding: 20px;
+    }
+    .sidebar
+    {
+        width: 250px;
+        background-color: rgb(249, 249, 253);
+
+    }
+    .sidebar li a
+    {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+        color: rgb(10, 73, 234);
+        padding: 50px;
+        text-decoration: none;  
+    }
+    .card
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        background-color: aquamarine;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        width: 220px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+        border-color: black;
+        border: 2px solid black;            
+        }
+    aside ul 
+    {
+        list-style: none;
+    }  
+    aside ul li
+    {
+        padding-top: 20px;
+    } 
+  </style>
+</head>
+<body>
+    <header>
+        <h2>Responsive Dashboard Layout</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+    <aside class="sidebar">
+        <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Products</a></li>
+        </ul>
+    </aside>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <h3>BOX Heading</h3>
+                </div>
+                <div class="card">
+                    <h3>BOX Heading</h3>
+                </div>
+                <div class="card">
+                    <h3>BOX Heading</h3>
+                </div>
+                <div class="card">
+                    <h3>BOX Heading</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
