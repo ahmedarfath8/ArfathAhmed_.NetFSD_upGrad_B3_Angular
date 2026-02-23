@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dynamic Student Profile Manager </title>
+    </head>
+    <body>
+        <h1>Dynamic Student Profile Manager </h1>
+        <div id="output"></div>
+        <label>Update Marks:</label>
+        <input type="number" id="newMarks">
+        <input type="button" value="Update Marks" onclick="updateMarks()">
+
+        
+        <script>
+           let student ={
+            name:"arfath",
+            roll:123,
+            marks:85
+           }
+           function updateStudentProfile(student){
+            let div = document.getElementById("output")
+            div.innerHTML=`
+                <h3>Name : ${student.name}</h3>
+                <h3>Roll no :${student.roll}</h3>
+                <h3>Marks : ${student.marks}</h3>
+            `;
+           }
+           function updateMarks(){
+            let newMarks = Number(document.getElementById("newMarks").value)
+            student.marks = newMarks
+            updateStudentProfile(student)
+           }
+           updateStudentProfile(student)
+        </script>
+    </body>
+</html>

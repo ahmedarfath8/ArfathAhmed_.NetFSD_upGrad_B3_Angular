@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Counter App </title>
+    </head>
+    <body>
+        <h1>Counter App with Scope Control</h1>
+        <label for="Counter">Enter the value to be Added : </label>
+        <input type="number" name="number" id="number"><br>
+        <h3>the total value is : </h3>
+        <h3 id="counter"></h3>
+        <input type="submit" value="Increment" onclick="increment()">
+        <input type="reset" value="Reset" onclick="reset()">
+        <script>
+           let count = 0;
+           function increment(){
+            count+=Number(document.getElementById("number").value);
+            document.getElementById("counter").textContent=count
+           }
+           function reset(){
+            count=0;
+            document.getElementById("counter").textContent=count
+           }
+        </script>
+    </body>
+</html>

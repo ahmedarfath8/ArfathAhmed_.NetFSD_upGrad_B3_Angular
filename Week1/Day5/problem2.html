@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>User Info Display </title>
+    </head>
+    <body>
+        <h1>User Info Display </h1>
+        <label>Enter Name : </label>
+        <input type="text" id="name" name="name"><br>
+        <label for="age">Enter age : </label>
+        <input type="number" name="age" id="age"><br>
+        <label for="city">Enter the City : </label>
+        <input type="text" name="city" id="city"><br>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <input type="submit" value="submit" onclick="createObj()">
+        <hr>
+        <script>
+           function createObj(){ 
+            let userObj ={
+                name:document.getElementById("name").value,
+                age:document.getElementById("age").value,
+                city:document.getElementById("city").value
+            }
+            displayUserInfo(userObj)
+        }
+            function displayUserInfo(userObj){
+                let p1=document.getElementById("p1").innerHTML="Name is : "+userObj.name
+                let p2=document.getElementById("p2").innerHTML="Age is : "+userObj.age
+                let p3=document.getElementById("p3").innerHTML="City is: "+userObj.city
+            }
+        </script>
+    </body>
+</html>
