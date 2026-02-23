@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location-Based Weather Logger</title>
+</head>
+
+<body>
+
+    <h1>Location Logger</h1>
+
+    <button onclick="getLocation()">Get My Location</button>
+
+    <p id="output"></p>
+
+    <h3>Location History (Last 5)</h3>
+    <ul id="history"></ul>
+
+    <script>
+
+        function getLocation() {
+
+            if (navigator.geolocation) {
+
+                navigator.geolocation.getCurrentPosition(
+                    successCallback,
+                    errorCallback,
+                    { timeout: 10000 } 
+                );
+
+            } else {
+                document.getElementById("output").innerText =
+                    "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function successCallback(position) {
+
+            let lat = position.coords.latitude;
+            let lon = position.coords.longitude;
+
+            document.getElementById("output").innerText =
+                "Latitude: " + lat + " | Longitude: " + lon;
+
+            saveLocation(lat, lon);
+
+            displayHistory();
+        }
+
+        function errorCallback(error) {
+
+            let message = "";
+
+            switch (error.code) {
+
+                case error.PERMISSION_DENIED:
+                    message = "Permission Denied!";
+                    break;
+
+                case error.POSITION_UNAVAILABLE:
+                    message = "Location Unavailable.";
+                    break;
+
+                case error.TIMEOUT:
+                    message = "Request Timed Out.";
+                    break;
+
+                default:
+                    message = "Unknown Error.";
+            }
+
+            document.getElementById("output").innerText = message;
+        }
+
+        function saveLocation(lat, lon) {
+
+            let history =
+                JSON.parse(localStorage.getItem("locations")) || [];
+
+            let newLocation = {
+                latitude: lat,
+                longitude: lon,
+                time: new Date().toLocaleString()
+            };
+
+            history.unshift(newLocation);
+
+            if (history.length > 5) {
+                history.pop();
+            }
+
+            localStorage.setItem(
+                "locations",
+                JSON.stringify(history)
+            );
+        }
+
+        function displayHistory() {
+
+            let history =
+                JSON.parse(localStorage.getItem("locations")) || [];
+
+            let list = document.getElementById("history");
+            list.innerHTML = "";
+
+            history.forEach(function(item) {
+
+                let li = document.createElement("li");
+
+                li.innerText =
+                    item.latitude +
+                    ", " +
+                    item.longitude +
+                    " (" +
+                    item.time +
+                    ")";
+
+                list.appendChild(li);
+            });
+        }
+
+        window.onload = function () {
+            displayHistory();
+        };
+
+    </script>
+
+</body>
+</html>
