@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student grade</title>
+    </head>
+    <body style="text-align: center;">
+        <h1>Student Grade Evaluator</h1>
+        <hr>
+        <label>Please Enter Your Marks : 0-100 </label><br><br>
+        <input type="number" id="marks"><br><br>
+        <input type="submit" value="submit" onclick="calc()"><hr>
+        <script>
+            function calc(){
+                let marks = document.getElementById("marks").value
+                if(marks >= 75){
+                    console.log("Grade A")
+                }
+                else if(marks >= 60){
+                    console.log("Grade B")
+                }
+                else if(marks >= 40){
+                    console.log("Grade C")
+                }
+                else if(marks<40){
+                    console.log("Fail")
+                }
+                else{
+                    console.log("Please Enter a Valid Input")
+                }
+            }
+        </script>
+    </body>
+</html>

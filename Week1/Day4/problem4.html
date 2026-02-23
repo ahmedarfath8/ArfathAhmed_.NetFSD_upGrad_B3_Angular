@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Number Analysis Tool</title>
+    </head>
+    <body style="text-align: center;">
+        <h1>Number Analysis Tool</h1>
+        <hr>
+        <label>Enter the Number : </label>
+        <br>
+        <input type="number" id="number">
+        <br>
+        <input type="submit" value="submit" onclick="check()">
+        <br><hr>
+        <script>
+            function check(){
+                let number = Number(document.getElementById("number").value);
+                (number>0) ? console.log("positive"):console.log("negative")
+                if(number%2==0){
+                    console.log("the "+number+" is EVEN")
+                }else{
+                     console.log("the "+number+" is ODD")
+                }
+            }
+        </script>
+    </body>
+</html>

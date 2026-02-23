@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Signals</title>
+    </head>
+    <body>
+        <h1>Signals</h1>
+        <select name="color" id="color">
+            <option value="Red">RED</option>
+            <option value="Yellow">YELLOW</option>
+            <option value="Green">GREEN</option>
+            <input type="submit" value="GO" onclick="go()">
+        </select>
+        <script>
+            function go(){
+               let signal = document.getElementById("color").value
+               switch (signal){
+                case "Red": console.log("STOP");break
+                case "Yellow": console.log("GET READY");break
+                case "Green": console.log("GO");break
+                default : console.log("please enter a valid input")
+               }
+            }
+        </script>
+    </body>
+</html>
