@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Marks Analyzer </title>
+    </head>
+    <body style="text-align: center;">
+        <h1>Student Marks Analyzer </h1>
+        <hr>
+        <h2 id="display"></h2>
+        <input type="button" value="Total" id="total" onclick="total()"><span> </span>
+        <input type="button" value="Average" id="average"onclick="average()"><span> </span>
+        <input type="button" value="Get Result" id="result"onclick="result()"><hr>
+
+        <script>
+           const marks = [87,88,89,87,86]
+           function total(){
+            let max = a=marks.length*100
+            let total= marks.reduce((sum,n)=>sum+n,0)
+            document.getElementById("display").textContent=`the total marks obtained by the student is : ${total}/${max}`
+           }
+           function average(){
+            let average = (marks.reduce((sum,n)=>sum+n,0))/marks.length
+            document.getElementById("display").textContent=`the average score obtained by the student is ${average}`
+           }
+           function result(){
+            let max = a=marks.length*100
+            let total= marks.reduce((sum,n)=>sum+n,0)
+            if((total/max*100) >= 60){
+                document.getElementById("display").textContent=`Congragulation your final result is : PASS`
+            }else{
+                document.getElementById("display").textContent=`final result is : FAIL`
+            }
+           }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Product Cart Summary </title>
+    </head>
+    <body style="text-align: center;">
+        <h1>Product Cart Summary </h1>
+        <h2 id="display"></h2><hr>
+        <input type="button" value="Calculate Total" id="total" onclick="total()"><span></span><hr>
+        <script>
+            const items = [
+                { name: "Milk", price: 40, quantity: 2 },
+                { name: "Bread", price: 30, quantity: 1 },
+                { name: "Eggs", price: 6, quantity: 12 }
+            ]
+           function total(){
+            let total=items.reduce((total,item)=>total+(item.price*item.quantity),0)
+                document.getElementById("display").textContent=`Total Cart Value INR : ${total}`
+            }
+        </script>
+    </body>
+</html>

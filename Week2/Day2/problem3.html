@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>employees management system</title>
+    </head>
+    <body>
+        <h1>WELCOME to employees management system</h1>
+        <label>Slect A Role : </label>
+        <select name="role" id="role">
+            <option value="All" selected >Get All Employees</option>
+            <option value="Manager">Manager</option>
+            <option value="Salesman">Salesman</option>
+            <option value="Clerk">Clerk</option>
+        </select>
+        <input type="button" value="Get Details" id="submit">
+        <br><br>
+        <table border="1" style="border: solid;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Job</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody id="result">
+        </tbody></table>
+        <script>
+            const employees = [
+                { id: 1, name: "Arfath", job: "Manager", salary: 50000 },
+                { id: 2, name: "Rahul", job: "Salesman", salary: 30000 },
+                { id: 3, name: "Amit", job: "Clerk", salary: 20000 },
+                { id: 4, name: "Rahul", job: "Salesman", salary: 30000 },
+                { id: 5, name: "Vikram", job: "Salesman", salary: 32000 },
+                { id: 6, name: "Sneha", job: "Manager", salary: 55000 },
+                { id: 7, name: "Karan", job: "Salesman", salary: 31000 },
+                { id: 8, name: "Neha", job: "Clerk", salary: 22000 },
+            ]
+            document.getElementById("submit").addEventListener("click",()=>{
+                getDetails(document.getElementById("role").value)
+            })
+            function getDetails(role){
+                if(role=="All"){
+                    //document.getElementById("result").textContent=textContent= JSON.stringify(employee) 
+                    let tablebody = document.getElementById("result");
+                    tablebody.innerHTML = "";
+                    for(const emp of employees){
+                        tablebody.innerHTML +=
+                        `<tr>
+                        <td>${emp.id}</td>
+                        <td>${emp.name}</td>
+                        <td>${emp.job}</td>
+                        <td>${emp.salary}</td>
+                        </tr>`
+                   }
+                }else{
+                    //document.getElementById("result").textContent=textContent= JSON.stringify(arr)
+                    let filteredEmployees = employees.filter(emp => emp.job==role)
+                    let tablebody = document.getElementById("result");
+                    tablebody.innerHTML = "";
+                    for(const emp of filteredEmployees){
+                        tablebody.innerHTML +=
+                        `<tr>
+                        <td>${emp.id}</td>
+                        <td>${emp.name}</td>
+                        <td>${emp.job}</td>
+                        <td>${emp.salary}</td>
+                        </tr>`
+                   }                  
+                }
+            }
+        </script>
+    </body>
+</html>
