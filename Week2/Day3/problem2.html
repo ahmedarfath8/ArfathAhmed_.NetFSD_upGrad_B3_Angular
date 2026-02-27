@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task Manager with Async Storage </title>
+    </head>
+    <body>
+        <h1>Task Manager</h1>
+        <label>Enter the task</label><span></span>
+        <input type="text" name="text" id="text"><span></span>
+        <input type="button" value="Add Task" id="addTask">
+        <div id="output"></div>
+        <script>
+        document.getElementById("addTask").addEventListener("click", handleAddTask);
+
+           let taskList = ["eat","sleep","work","repeat"]
+
+           const addTask = (task)=>{
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    if(task.trim()===""){
+                        reject("task cannot be empty")
+                    }else{
+                        taskList.push(task)
+                        resolve(`Task - ${task} added successfully`)
+                    }
+                },1000)
+            })
+           }
+
+           function handleAddTask(){
+            let task = document.getElementById("text").value
+            addTask(task).then(result=>{
+                document.getElementById("output").innerText=result
+                document.getElementById("text").value=""
+            })
+            .catch(error =>{
+                 document.getElementById("output").innerText=error
+            })
+           }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Data</title>
+    </head>
+    <body>
+        <h1>Weather Data</h1>
+        <hr>
+        <div>
+            <p id="message"></p>
+            <input type="button" value="GET REPORT" id="submit" onclick="getReport()"><br>
+        </div>
+        <hr>
+        <script>
+           const url ="https://api.open-meteo.com/v1/forecast?latitude=12.58&longitude=77.35&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m"
+           function getReport(){
+            console.log("funtion running")
+            document.getElementById("message").innerHTML=
+            `<p> Please wait while fetch the data..</p>`
+            fetch(url).then(response =>{
+                if(!response.ok){
+                    throw new Error("error occured in the api call")
+                }
+                return response.json()
+            })
+            .then(data => {
+                const temp = data.current.temperature_2m
+                document.getElementById("message").innerHTML=
+                `<h4>The Temp in BENGALURU is : ${temp} °C</h4>`
+                console.log(temp)
+            })
+            .catch(error =>{
+                console.log(error.message)
+                document.getElementById("message").innerHTML=
+                `<p style="color:red;">error occured while fetching the data</p>`
+            })
+           }
+        </script>
+    </body>
+</html>
