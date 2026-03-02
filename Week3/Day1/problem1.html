@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>feedback form</title>
+    </head>
+    <body>
+        <h1>FeedBack Form</h1>
+        <label for="name">NAME : </label>
+        <input type="text" name="name" id="name"><br>
+        <label for="email">EMAIL : </label>
+        <input type="email" name="email" id="email"><br>
+        <label for="rating">COURSE RATING :</label>
+        <select name="rating" id="rating">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+        <label for="feedback">WRITE A FEEDBACK...</label><br>
+        <textarea name="textbox" id="textbox" cols="30" rows="10" placeholder="write here..."></textarea><br>
+        <input type="button" value="SUBMIT" id="submit">
+        <p id="p1"></p>
+        <script  src="https://code.jquery.com/jquery-4.0.0.js">		
+	    </script>
+        <script>
+           $(document).ready(function(){
+            $("#submit").click(function(){
+            if($("#name").val()!="" && $("#email").val()!=""){
+                $("#p1").text("Valid Reasponse").css("color","green")
+                $("input").val("");
+            }else{
+                $("#p1").text("Invalid Response").css("color","red")
+            }
+            })
+           })
+        </script>
+    </body>
+</html>

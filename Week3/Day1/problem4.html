@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+</head>
+<body>
+<style>
+    .completed {
+        text-decoration: line-through;
+        background-color: gray;
+    }
+    </style>
+    <h2>To Do List</h2>
+
+    <label for="taskEntry">Enter Task : </label> 
+    <input type="text" name="task" id="task">
+    <input type="button" value="Add Task" id="button"><span id="p1"></span><br><br>
+
+    <div class="taskList">
+        <table id="table1" border="1">
+            <thead>
+                <tr>
+                    <td>Task</td>
+                    <td>Status</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody id="taskRow">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            
+            $("#button").on("click",function (){
+                let task = $("#task").val()
+                if(task === ""){
+                $("#p1").text(" Task Cannot Be Empty !!!")
+                return
+                } 
+                $("#p1").text("")
+                $("#taskRow").append(`
+                <tr>
+                <td>${task}</td>
+                <td><button class="complete">Completed</button></td>
+                <td><button class="delete">Delete</button></td>
+                </tr>
+                `)
+                $("#task").val("")
+               
+            $("#taskRow").on("click", ".delete", function(){
+                $(this).closest("tr").remove();
+            })
+
+            $("#taskRow").on("click", ".complete", function(){
+                $(this).closest("tr").find("td:first").toggleClass("completed")
+                $(this).prop("disabled", true)
+            });
+
+        })
+        });
+    </script>
+
+</body>
+</html>

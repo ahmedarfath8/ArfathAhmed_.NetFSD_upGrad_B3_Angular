@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product List</title>
+</head>
+<body>
+    <h2>Cart: <span id="cartCount">0</span></h2>
+    <div class="product-list">
+        <div class="product">
+            <span>1. MILK</span>
+            <button class="add-btn" data-product="Milk">Add to Cart</button>
+            <span class="message"></span>
+        </div>
+        <div class="product">
+            <span>2. EGG</span>
+            <button class="add-btn" data-product="Egg">Add to Cart</button>
+            <span class="message"></span>
+        </div>
+        <div class="product">
+            <span>3. BREAD</span>
+            <button class="add-btn" data-product="Bread">Add to Cart</button>
+            <span class="message"></span>
+        </div>
+        <div class="product">
+            <span>4. BUTTER</span>
+            <button class="add-btn" data-product="Butter">Add to Cart</button>
+            <span class="message"></span>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            let count = 0;
+            $(".product-list").on("click", ".add-btn", function(){
+                count++;
+                $("#cartCount").text(count)
+                $(this).prop("disabled", true)
+                $(this).next(".message").text(" Added!").css("color", "green")
+            });
+        })
+    </script>
+
+</body>
+</html>
