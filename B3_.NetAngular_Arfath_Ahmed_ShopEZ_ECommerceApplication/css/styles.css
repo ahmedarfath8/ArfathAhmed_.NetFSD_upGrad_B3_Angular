@@ -1,0 +1,150 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #d7d3cf;
+  color: #1d1814;
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+h1,
+h2,
+h3,
+.navbar-brand,
+.section-title,
+.card-title {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.navbar {
+  background-color: #111111 !important;
+}
+
+.navbar-brand {
+  font-size: 1.9rem;
+  letter-spacing: 0.05em;
+}
+
+.hero-section {
+  background:
+    linear-gradient(rgba(17, 11, 8, 0.34), rgba(17, 11, 8, 0.48)),
+    url("../images/hero-bg.webp") center/cover;
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 520px;
+  text-align: left;
+}
+
+.hero-label {
+  letter-spacing: 0.3em;
+  font-size: 0.85rem;
+  color: #e6d7c6;
+}
+
+.hero-text {
+  margin: 0 0 1.5rem;
+  color: #f2e8df;
+}
+
+.section-title {
+  font-size: 2.4rem;
+}
+
+.product-card {
+  height: 100%;
+  border: 1px solid #e6dacb;
+  background-color: #efebe7;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 1.8rem rgba(61, 45, 29, 0.12);
+}
+
+.product-image {
+  height: 320px;
+  object-fit: cover;
+}
+
+.details-image {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cart-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #111111 !important;
+}
+
+.btn-warning {
+  background-color: #b98a4b;
+  border-color: #b98a4b;
+  color: #ffffff;
+}
+
+.btn-warning:hover {
+  background-color: #9d723b;
+  border-color: #9d723b;
+  color: #ffffff;
+}
+
+.btn-outline-dark:hover,
+.btn-dark {
+  background-color: #111111;
+}
+
+.card,
+.table,
+.form-control,
+.list-group-item {
+  border-radius: 0;
+}
+
+.table,
+.card,
+.list-group-item,
+.form-control {
+  background-color: #efebe7;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 55vh;
+    background-position: 32% center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .product-image {
+    height: 260px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+}

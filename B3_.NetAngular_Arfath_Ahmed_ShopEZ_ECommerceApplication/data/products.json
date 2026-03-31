@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "brand": "Polo Ralph Lauren",
+    "name": "Tailored Wool Twill Suit",
+    "description": "A tailored formal suit in a deep blue tone with a sharp business look, clean structure and classic premium styling.",
+    "price": 93600,
+    "image": "images/polo-suit.avif"
+  },
+  {
+    "id": 2,
+    "brand": "Louis Philippe",
+    "name": "Slim Fit Textured Three Piece Suit",
+    "description": "A slim-fit three-piece suit in a light beige tone with a refined ceremonial style, ideal for weddings and formal events.",
+    "price": 13063,
+    "image": "images/louis-suit.avif"
+  },
+  {
+    "id": 3,
+    "brand": "Emporio Armani",
+    "name": "Regular Fit Single-Breasted Suit Set",
+    "description": "A regular-fit suit set in a dark charcoal tone with a sleek evening style, finished with a polished single-breasted silhouette.",
+    "price": 157500,
+    "image": "images/armani-suit.avif"
+  },
+  {
+    "id": 4,
+    "brand": "ShopEZ Atelier",
+    "name": "Velvet Dinner Jacket",
+    "description": "A luxe dinner jacket with a rich partywear style and a bold formal look designed for evening occasions.",
+    "price": 7799,
+    "image": "images/armani-suit.avif"
+  },
+  {
+    "id": 5,
+    "brand": "ShopEZ Classic",
+    "name": "Summer Occasion Suit",
+    "description": "A lightweight formal suit with a soft beige-inspired look and an easy refined style for daytime functions.",
+    "price": 6999,
+    "image": "images/polo-suit.avif"
+  },
+  {
+    "id": 6,
+    "brand": "ShopEZ Signature",
+    "name": "Three-Piece Formal Suit",
+    "description": "A complete three-piece suit with a strong tailored style and a dark formal look suited for statement occasions.",
+    "price": 13999,
+    "image": "images/louis-suit.avif"
+  }
+]
