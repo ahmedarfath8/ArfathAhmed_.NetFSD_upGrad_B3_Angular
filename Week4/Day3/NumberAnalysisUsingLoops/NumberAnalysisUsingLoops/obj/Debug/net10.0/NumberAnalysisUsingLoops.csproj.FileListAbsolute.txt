@@ -1,0 +1,15 @@
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\bin\Debug\net10.0\NumberAnalysisUsingLoops.exe
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\bin\Debug\net10.0\NumberAnalysisUsingLoops.deps.json
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\bin\Debug\net10.0\NumberAnalysisUsingLoops.runtimeconfig.json
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\bin\Debug\net10.0\NumberAnalysisUsingLoops.dll
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\bin\Debug\net10.0\NumberAnalysisUsingLoops.pdb
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\obj\Debug\net10.0\NumberAnalysisUsingLoops.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\obj\Debug\net10.0\NumberAnalysisUsingLoops.AssemblyInfoInputs.cache
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\obj\Debug\net10.0\NumberAnalysisUsingLoops.AssemblyInfo.cs
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\obj\Debug\net10.0\NumberAnalysisUsingLoops.csproj.CoreCompileInputs.cache
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\obj\Debug\net10.0\NumberAnalysisUsingLoops.sourcelink.json
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\obj\Debug\net10.0\NumberAnalysisUsingLoops.dll
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\obj\Debug\net10.0\refint\NumberAnalysisUsingLoops.dll
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\obj\Debug\net10.0\NumberAnalysisUsingLoops.pdb
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\obj\Debug\net10.0\NumberAnalysisUsingLoops.genruntimeconfig.cache
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\NumberAnalysisUsingLoops\NumberAnalysisUsingLoops\obj\Debug\net10.0\ref\NumberAnalysisUsingLoops.dll

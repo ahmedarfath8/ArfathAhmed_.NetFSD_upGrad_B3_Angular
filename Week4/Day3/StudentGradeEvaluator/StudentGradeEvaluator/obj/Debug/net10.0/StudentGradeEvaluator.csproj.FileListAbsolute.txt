@@ -1,0 +1,15 @@
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\obj\Debug\net10.0\StudentGradeEvaluator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\obj\Debug\net10.0\StudentGradeEvaluator.AssemblyInfoInputs.cache
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\obj\Debug\net10.0\StudentGradeEvaluator.AssemblyInfo.cs
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\obj\Debug\net10.0\StudentGradeEvaluator.csproj.CoreCompileInputs.cache
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\obj\Debug\net10.0\StudentGradeEvaluator.sourcelink.json
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\bin\Debug\net10.0\StudentGradeEvaluator.exe
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\bin\Debug\net10.0\StudentGradeEvaluator.deps.json
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\bin\Debug\net10.0\StudentGradeEvaluator.runtimeconfig.json
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\bin\Debug\net10.0\StudentGradeEvaluator.dll
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\bin\Debug\net10.0\StudentGradeEvaluator.pdb
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\obj\Debug\net10.0\StudentGradeEvaluator.dll
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\obj\Debug\net10.0\refint\StudentGradeEvaluator.dll
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\obj\Debug\net10.0\StudentGradeEvaluator.pdb
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\obj\Debug\net10.0\StudentGradeEvaluator.genruntimeconfig.cache
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\StudentGradeEvaluator\StudentGradeEvaluator\obj\Debug\net10.0\ref\StudentGradeEvaluator.dll

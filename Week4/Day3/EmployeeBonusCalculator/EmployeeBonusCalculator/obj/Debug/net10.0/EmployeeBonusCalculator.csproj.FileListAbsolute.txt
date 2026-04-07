@@ -1,0 +1,15 @@
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\bin\Debug\net10.0\EmployeeBonusCalculator.exe
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\bin\Debug\net10.0\EmployeeBonusCalculator.deps.json
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\bin\Debug\net10.0\EmployeeBonusCalculator.runtimeconfig.json
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\bin\Debug\net10.0\EmployeeBonusCalculator.dll
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\bin\Debug\net10.0\EmployeeBonusCalculator.pdb
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\obj\Debug\net10.0\EmployeeBonusCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\obj\Debug\net10.0\EmployeeBonusCalculator.AssemblyInfoInputs.cache
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\obj\Debug\net10.0\EmployeeBonusCalculator.AssemblyInfo.cs
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\obj\Debug\net10.0\EmployeeBonusCalculator.csproj.CoreCompileInputs.cache
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\obj\Debug\net10.0\EmployeeBonusCalculator.sourcelink.json
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\obj\Debug\net10.0\EmployeeBonusCalculator.dll
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\obj\Debug\net10.0\refint\EmployeeBonusCalculator.dll
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\obj\Debug\net10.0\EmployeeBonusCalculator.pdb
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\obj\Debug\net10.0\EmployeeBonusCalculator.genruntimeconfig.cache
+C:\Users\arfat\OneDrive\Desktop\uG.net\codes\Week4\Day3\EmployeeBonusCalculator\EmployeeBonusCalculator\obj\Debug\net10.0\ref\EmployeeBonusCalculator.dll
