@@ -1,0 +1,37 @@
+﻿@model Movie
+
+@{
+    ViewData["Title"] = "Update";
+}
+<h1>Update</h1>
+<h4>Movie</h4>
+<form asp-action="Update" method="post">
+
+    <div class="form-group">
+        <input type="hidden" asp-for="Id" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Genre" class="form-label"></label>
+        <input asp-for="Genre" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ReleaseDate" class="form-label"></label>
+        <input asp-for="ReleaseDate" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Price" class="form-label"></label>
+        <input asp-for="Price" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Rating" class="form-label"></label>
+        <input asp-for="Rating" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+<div>
+    <a asp-action="Index">Back to Movies</a>
+</div>
